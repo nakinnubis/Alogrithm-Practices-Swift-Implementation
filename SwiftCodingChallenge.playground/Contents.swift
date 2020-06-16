@@ -243,8 +243,8 @@ func encodeResistorColors(_ ohmsString: String) -> String {
 func TwoNumberWhichAddUp(numbers: [Int], number: Int) -> Bool{
     let result = false;
     for num in numbers {
-        if let firstNegative = numbers.first(where: { $0+num == number }) {
-            print("The number which add up are  \(firstNegative). with \(num)")
+        if let firstSumNum = numbers.first(where: { $0+num == number }) {
+            print("The number which add up are  \(firstSumNum). with \(num)")
             return true;
         }
     }
